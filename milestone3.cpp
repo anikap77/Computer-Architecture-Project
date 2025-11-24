@@ -430,7 +430,7 @@ void runFullSimulation(long long physMemBytes,
     // Close files...
     
     // ===== PRINT M2 RESULTS (Same as before) =====
-    // ... (Your M2 Print logic here) ...
+    // ... (M2 Print logic here) ...
 
     // ===== PRINT M3 CACHE RESULTS =====
     cout << "\n\n***** CACHE SIMULATION RESULTS *****\n" << endl;
@@ -446,7 +446,7 @@ void runFullSimulation(long long physMemBytes,
     double missRate = 100.0 - hitRate;
     
     // CPI Calculation: Total Cycles / Total Instructions
-    // Note: You need to track total instructions executed separately in the loop to get exact CPI
+    // Note: Need to track total instructions executed separately in the loop to get exact CPI
     // For now, assuming virtualPagesMapped approximates accesses, but you should count `eipAddr` parses.
     
     cout << fixed << setprecision(4);
