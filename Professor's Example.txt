@@ -1,0 +1,84 @@
+Professor's Example
+Cache Simulator - CS 3853 - Instructor Version: 2.17
+
+Trace File(s):
+        A-9_new_1.5.pdf.trc
+
+
+***** Cache Input Parameters *****
+
+Cache Size:                     512 KB
+Block Size:                     16 bytes
+Associativity:                  4
+Replacement Policy:             Round Robin
+Physical Memory:                128 MB
+Percent Memory Used by System:  75.0%
+Instructions / Time Slice:      ALL
+
+***** Cache Calculated Values *****
+
+Total # Blocks:                 32768
+Tag Size:                       10 bits
+Index Size:                     13 bits
+Total # Rows:                   8192
+Overhead Size:                  45056  bytes
+Implementation Memory Size:     556.00 KB  (569344 bytes)
+Cost:                           $38.92 @ $0.07 per KB
+
+
+***** Physical Memory Calculated Values *****
+
+Number of Physical Pages:       32768
+Number of Pages for System:     24576
+Size of Page Table Entry:       16 bits  (1 valid bit, 15 for PhysPage)
+Total RAM for Page Table(s):    1048576 bytes
+
+
+
+ =====> Creating Cache Data Structures ...
+
+ =====> Processing Trace Files ...
+
+ =====> Printing Simulation Results ...
+
+
+
+***** VIRTUAL MEMORY SIMULATION RESULTS *****
+
+Physical Pages Used By SYSTEM:  24576
+Pages Available to User:        8192
+
+Virtual Pages Mapped:           349255
+        ------------------------------
+        Page Table Hits:        348586
+        Pages from Free:        669
+        Total Page Faults:      0
+
+
+Page Table Usage Per Process:
+------------------------------
+
+[0] A-9_new_1.5.pdf.trc:
+        Used Page Table Entries: 669  ( 0.13%)
+        Page Table Wasted: 1047238 bytes
+
+
+
+***** CACHE SIMULATION RESULTS  *****
+
+Total Cache Accesses:           386454  (349255 addresses)
+--- Instruction Bytes:          737635
+--- SrcDst Bytes:               355732
+Cache Hits:                     373957
+Cache Misses:                   12497
+--- Compulsory Misses:          12211
+--- Conflict Misses:            286
+
+
+***** *****  CACHE HIT & MISS RATE:  ***** *****
+
+Hit  Rate:                      96.7662%
+Miss Rate:                      3.2338%
+CPI:                            4.55 Cycles/Instruction  (260322)
+Unused Cache Space:             348.81 KB / 556.00 KB = 62.73%  Waste: $24.42
+Unused Cache Blocks:            20557 / 32768
